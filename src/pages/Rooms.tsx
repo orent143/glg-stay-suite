@@ -32,7 +32,7 @@ const Rooms = () => {
       <section className="border-b border-border bg-secondary/30">
         <div className="container-app py-10">
           <h1 className="font-display text-4xl md:text-5xl">Find your room</h1>
-          <p className="mt-2 text-muted-foreground max-w-xl">Browse all rooms at Casa Digos. Filter by type, price, and availability.</p>
+          <p className="mt-2 text-muted-foreground max-w-xl">Browse all rooms at GLG Suite. Filter by type, price, and availability.</p>
         </div>
       </section>
 

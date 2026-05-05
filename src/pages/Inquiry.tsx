@@ -24,7 +24,7 @@ const Inquiry = () => {
           </p>
           <div className="mt-10 space-y-5">
             {[
-              { icon: Mail, label: "Email", value: "hello@casadigos.ph" },
+              { icon: Mail, label: "Email", value: "orentgultiano11@gmail.com" },
               { icon: Phone, label: "Phone", value: "+63 917 555 0142" },
               { icon: MapPin, label: "Address", value: "Rizal Ave., Digos City, Davao del Sur" },
             ].map((c) => (

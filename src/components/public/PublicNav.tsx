@@ -42,7 +42,7 @@ export function PublicNav() {
 
         <div className="hidden md:flex items-center gap-2">
           <Button asChild size="sm">
-            <Link to="/rooms" className="font-extralight">Browse Rooms</Link>
+            <Link to="/rooms" className="font-light">Browse Rooms</Link>
           </Button>
         </div>
 
@@ -71,7 +71,7 @@ export function PublicNav() {
               </NavLink>
             ))}
             <Button asChild size="sm" className="mt-2">
-              <Link to="/rooms" onClick={() => setOpen(false)} className="font-display">Browse Rooms</Link>
+              <Link to="/rooms" onClick={() => setOpen(false)} className="font-light">Browse Rooms</Link>
             </Button>
           </div>
         </div>

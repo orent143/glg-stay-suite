@@ -13,7 +13,7 @@ export default function TenantsAdmin() {
     <div className="container-app py-8">
       <PageHeader
         title="Tenants"
-        description="All current and past tenants of Casa Digos."
+        description="All current and past tenants of GLG Suite."
         actions={<Button><Plus className="h-4 w-4 mr-1.5" /> Add tenant</Button>}
       />
       <div className="rounded-xl border border-border bg-card overflow-hidden">

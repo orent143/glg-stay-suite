@@ -20,7 +20,7 @@ export default function Dashboard() {
     <div className="container-app py-8">
       <PageHeader
         title="Welcome back, Owner"
-        description="Here's what's happening at Casa Digos today — May 5, 2026."
+        description="Here's what's happening at GLG Suite today — May 5, 2026."
         actions={<Button asChild><Link to="/admin/rooms">Add new room</Link></Button>}
       />
 
