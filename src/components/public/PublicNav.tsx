@@ -17,12 +17,8 @@ export function PublicNav() {
     <header className="sticky top-0 z-40 w-full border-b border-border/80 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="container-app flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
-            <Home className="h-4 w-4" />
-          </div>
           <div className="leading-tight">
-            <div className="text-sm font-semibold">Casa Digos</div>
-            <div className="text-[11px] text-muted-foreground">Boarding House</div>
+            <h1 className="font-display font-light text-[23px]">GLG Suite</h1>
           </div>
         </Link>
 
@@ -34,7 +30,7 @@ export function PublicNav() {
               end={l.to === "/"}
               className={({ isActive }) =>
                 cn(
-                  "rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                  "rounded-md px-3 py-2 text-l font-light transition-colors",
                   isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground",
                 )
               }
@@ -46,7 +42,7 @@ export function PublicNav() {
 
         <div className="hidden md:flex items-center gap-2">
           <Button asChild size="sm">
-            <Link to="/rooms">Browse Rooms</Link>
+            <Link to="/rooms" className="font-extralight">Browse Rooms</Link>
           </Button>
         </div>
 
@@ -75,7 +71,7 @@ export function PublicNav() {
               </NavLink>
             ))}
             <Button asChild size="sm" className="mt-2">
-              <Link to="/rooms" onClick={() => setOpen(false)}>Browse Rooms</Link>
+              <Link to="/rooms" onClick={() => setOpen(false)} className="font-display">Browse Rooms</Link>
             </Button>
           </div>
         </div>

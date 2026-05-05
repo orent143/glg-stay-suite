@@ -13,36 +13,66 @@ const Index = () => {
       <PublicNav />
 
       {/* Hero */}
-      <section className="border-b border-border">
-        <div className="container-app py-16 md:py-24 grid gap-12 md:grid-cols-2 md:items-center">
-          <div className="animate-fade-in">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3 py-1 text-xs text-muted-foreground">
-              <span className="h-1.5 w-1.5 rounded-full bg-status-success" />
+      <section className="relative isolate w-full min-h-screen overflow-hidden border-b border-border">
+
+        {/* Background Image */}
+        <div className="absolute inset-0 -z-10">
+          <img
+            src="public/hero.jpg"
+            alt="Modern boarding house interior"
+            className="h-full w-full object-cover"
+          />
+          {/* Solid overlay (NO gradient) */}
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+
+        {/* Content */}
+        <div className="container-app py-20 md:py-28 grid gap-12 md:grid-cols-2 md:items-center">
+
+          {/* LEFT CONTENT */}
+          <div className="max-w-xl text-white">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-400" />
               Now accepting tenants for May 2026
             </div>
+
             <h1 className="mt-5 font-display text-5xl md:text-6xl leading-[1.05]">
-              A simpler way to find your next home in Digos City.
+              Affordable rooms for rent in Digos City.
             </h1>
-            <p className="mt-5 text-base md:text-lg text-muted-foreground max-w-lg">
-              Casa Digos is a modern boarding house offering single rooms, studios, and shared spaces — fully furnished, fairly priced, and built for students and young professionals.
+
+            <p className="mt-5 text-base md:text-lg text-white/80 max-w-lg">
+              Fully furnished boarding spaces for students and professionals — clean, secure, and ready for move-in.
             </p>
+
             <div className="mt-7 flex flex-wrap gap-3">
-              <Button asChild size="lg">
-                <Link to="/rooms">Browse available rooms <ArrowRight className="ml-1 h-4 w-4" /></Link>
+              <Button asChild size="lg" className="bg-white text-black hover:bg-white/90">
+                <Link to="/rooms">
+                  Check available rooms <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
               </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link to="/inquiry">Send an inquiry</Link>
+
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-white/40 text-white bg-[#1b202d] hover:bg-white/60"
+              >
+                <Link to="/inquiry">
+                  Send inquiry
+                </Link>
               </Button>
             </div>
+
+            {/* TRUST METRICS */}
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
               {[
-                { k: "12", l: "Total rooms" },
-                { k: "5★", l: "Avg. rating" },
-                { k: "24h", l: "Avg. reply" },
+                { k: "12", l: "Rooms available" },
+                { k: "₱2.2k+", l: "Starting monthly" },
+                { k: "<24h", l: "Response time" },
               ].map((s) => (
                 <div key={s.l}>
                   <div className="text-2xl font-semibold">{s.k}</div>
-                  <div className="text-xs text-muted-foreground">{s.l}</div>
+                  <div className="text-xs text-white/70">{s.l}</div>
                 </div>
               ))}
             </div>

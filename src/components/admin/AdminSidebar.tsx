@@ -27,7 +27,7 @@ export function AdminSidebar() {
           </div>
           {!collapsed && (
             <div className="leading-tight">
-              <div className="text-sm font-semibold">Casa Digos</div>
+              <div className="text-sm font-semibold">GLG Suite</div>
               <div className="text-[11px] text-sidebar-foreground/60">Owner Portal</div>
             </div>
           )}
