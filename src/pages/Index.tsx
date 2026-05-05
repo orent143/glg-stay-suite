@@ -18,7 +18,7 @@ const Index = () => {
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
           <img
-            src="public/hero.jpg"
+            src="/hero.jpg"
             alt="Modern boarding house interior"
             className="h-full w-full object-cover"
           />
